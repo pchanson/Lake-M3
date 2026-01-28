@@ -2,7 +2,7 @@
 
 -----
 
-:busts_in_silhouette: Robert Ladwig, Emma Marchisin, Bennett McAfee, Ahmed Elhabashy, Paul C Hanson
+:busts_in_silhouette: Robert Ladwig, Emma Marchisin, Bennett McAfee, Ahmed Elhabashy, Cal Buelo, Paul C Hanson
 :email: [contact](mailto:rladwig@ecos.au.dk)
 :computer: [more info](https://www.robert-ladwig.com/software)
 

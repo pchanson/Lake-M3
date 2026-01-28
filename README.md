@@ -1,4 +1,4 @@
-# Lake M<sup>3</sup> (Minimalistic Metabolism Model)
+# Lake-M<sup>3</sup> (Minimalistic Metabolism Model)
 
 -----
 
@@ -10,7 +10,7 @@
 
 
 ## Overview
-Lake M<sup>3</sup> is based on the philosophy to develop a modularized, easy-to-modify (that's why it's completely in Python), vertical 1D aquatic ecosystem with focus on freshwater metabolism. The model simulates water temperature, dissolved oxygen and organic carbon (dissolved and particulate as well as labile and refractory) dynamics using the general equations in the forms of:
+Lake-M<sup>3</sup> is based on the philosophy to develop a modularized, easy-to-modify (that's why it's completely in Python), vertical 1D aquatic ecosystem with focus on freshwater metabolism. The model simulates water temperature, dissolved oxygen and organic carbon (dissolved and particulate as well as labile and refractory) dynamics using the general equations in the forms of:
 
 $A \frac{\partial T}{\partial t}=\frac{\partial}{\partial z}(A K_z \frac{\partial T}{\partial z}) + \frac{1}{{\rho_w c_p}}\frac{\partial H(z)}{\partial z}  + \frac{\partial A}{\partial z}\frac{H_{geo}}{\rho_w c_p}$
 

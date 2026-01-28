@@ -26,8 +26,8 @@ flowchart TD
   A[Boundary heat fluxes] --> B[Ice and snow dynamics];
   B[Ice and snow dynamics] --> C[Boundary oxygen fluxes];
   C[Boundary oxygen fluxes] --> D[Turbulent diffusion];
-  D[Turbulent diffusion] --> E[Advective-diffusion for particulate matter];
-  E[Advective-diffusion for particulate matter] --> F[Convective mixing];
+  D[Turbulent diffusion] --> E[Advection-diffusion for particulate matter];
+  E[Advection-diffusion for particulate matter] --> F[Convective mixing];
   F[Convective mixing] -->  G[Density instabilities];
   G[Density instabilities] --> H[Water quality production and consumption];
   H[Water quality production and consumption] --> A[Boundary heat fluxes];

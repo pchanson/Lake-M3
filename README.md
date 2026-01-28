@@ -3,13 +3,15 @@
 -----
 
 :busts_in_silhouette: Robert Ladwig, Emma Marchisin, Bennett McAfee, Ahmed Elhabashy, Cal Buelo, Paul C Hanson
+
 :email: [contact](mailto:rladwig@ecos.au.dk)
 :computer: [more info](https://www.robert-ladwig.com/software)
 
 -----
-
-
 ## Overview
+Lake-M<sup>3</sup> is based on [LakeModelR](https://github.com/robertladwig/LakeModelR) and [1D-AEMpy](https://github.com/robertladwig/1D-AEMpy), which were both for the most part developed at the University of Wisconsin-Madison to support lake modeling projects with focus on [Ecological Knowledge-Guided Machine Learning](https://eco-kgml.github.io/). The current Lake-M<sup>3</sup> is an on-going collaboration between the University of Wisconsin-Madison and Aarhus University.
+
+## Modeling philosophy
 Lake-M<sup>3</sup> is based on the philosophy to develop a modularized, easy-to-modify (that's why it's completely in Python), vertical 1D aquatic ecosystem with focus on freshwater metabolism. The model simulates water temperature, dissolved oxygen and organic carbon (dissolved and particulate as well as labile and refractory) dynamics using the general equations in the forms of:
 
 $A \frac{\partial T}{\partial t}=\frac{\partial}{\partial z}(A K_z \frac{\partial T}{\partial z}) + \frac{1}{{\rho_w c_p}}\frac{\partial H(z)}{\partial z}  + \frac{\partial A}{\partial z}\frac{H_{geo}}{\rho_w c_p}$

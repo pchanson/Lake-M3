@@ -3613,9 +3613,11 @@ def boundary_module_oxygen(
         
     da_dz = np.gradient(area/depth)
     dv_da = np.gradient(volume/area)
-    sed_flux = da_dz * dv_da * (-d_sod/d_thick * (o2/volume - o2/(2* volume)))
+    sed_flux = da_dz  * (d_sod/d_thick/dx * (o2/volume - o2/(2* volume)))
 
-    o2 = o2 - f_sod + sed_flux * dt * theta_r**(u - 20)
+
+    o2 = o2 - np.minimum(o2, ((f_sod  * area  + sed_flux) * dt * theta_r**(u - 20)))
+    #breakpoint()
     # o2[(nx-1)] = o2[(nx-1)] - (f_sod + d_sod/d_thick * o2[nx-1]/volume[nx-1] * area[nx-1]) * dt * theta_r**(u[(nx-1)] - 20) 
     
 
@@ -4383,7 +4385,7 @@ def run_wq_model(
     u = heating_res['temp']
    
     IceSnowAttCoeff = heating_res['IceSnowAttCoeff']
-    
+    #breakpoint()
     #plt.plot(u, color = 'red')
     
     um_heat[:, idn] = u
